@@ -1,5 +1,4 @@
 //Challange 1: Age in days 
-
 function ageInDays() {
     var birthday = prompt('What year you born ?');
     var ageInDays = (2022-birthday) * 365;
@@ -12,7 +11,14 @@ function ageInDays() {
 }
 
 //Reset element
-
 function reset() {
     document.getElementById('ageInDays').remove();
+}
+
+//Generate cat
+function genCat() {
+    var iframe = document.createElement('iframe');
+    var div = document.getElementById('flex-cat-gen');
+    iframe.src = "https://giphy.com/embed/3oriO0OEd9QIDdllqo";
+    div.appendChild(iframe);
 }
